@@ -1,0 +1,36 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Alpha{
+    public static void main(String[] args) {
+        //System.out.println("Try programiz.pro");
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the string");
+    String s=sc.nextLine();
+    StringBuilder output=new StringBuilder();
+    int i=0;
+    while(i<s.length())
+    {
+        char ch=s.charAt(i);
+        i++;
+        StringBuilder num=new StringBuilder();
+        while(i<s.length()&&Character.isDigit(s.charAt(i)))
+        {
+          num.append(s.charAt(i));
+          i++;
+        }
+        
+        int count=Integer.parseInt(num.toString());
+         for(int j=0;j<count;j++)
+         {
+             output.append(ch);
+         }
+    }
+    System.out.println(output.toString());
+         
+    }
+}
+    
+        
+        
+    
